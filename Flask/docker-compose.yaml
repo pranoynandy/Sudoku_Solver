@@ -1,8 +1,10 @@
 version: "3"
 services:
     Sudoku:
+        build: 
+          context: .
+          dockerfile: Dockerfile
         image: sudoku
         ports:
             - "5001:5001"
-        restart: always
-              
+          
